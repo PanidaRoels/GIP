@@ -3,15 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-    E-mail:&nbsp;&nbsp;
-    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        <asp:Login ID="lgnAanmelden" runat="server" OnAuthenticate="Login1_Authenticate" UserNameLabelText="E-mail:" Width="244px">
+        </asp:Login>
     <br />
 </p>
 <p>
-    Wachtwoord:&nbsp;&nbsp;
-    <asp:TextBox ID="txtWW" runat="server"></asp:TextBox>
-</p>
+    &nbsp;</p>
 <p>
-    <asp:Button ID="btnAanmelden" runat="server" Text="Aanmelden" OnClick="btnAanmelden_Click" />
-</p>
+    &nbsp;</p>
 </asp:Content>

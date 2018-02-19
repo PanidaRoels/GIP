@@ -13,30 +13,12 @@ namespace GIP_Webshop {
     public partial class Login {
         
         /// <summary>
-        /// txtEmail control.
+        /// lgnAanmelden control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
-        /// <summary>
-        /// txtWW control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtWW;
-        
-        /// <summary>
-        /// btnAanmelden control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAanmelden;
+        protected global::System.Web.UI.WebControls.Login lgnAanmelden;
     }
 }

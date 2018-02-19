@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,9 +66,45 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\GIP Webshop - update.accdb" />
+    <Content Include="BeheerBestellingen.aspx" />
+    <Content Include="Beheerder.aspx" />
+    <Content Include="BeheerKlanten.aspx" />
+    <Content Include="BeheerProducten.aspx" />
+    <Content Include="Bestellingen.aspx" />
+    <Content Include="EigenProfiel.aspx" />
+    <Content Include="Foto%27s\Alchemist.jpg" />
+    <Content Include="Foto%27s\AllNighter.jpg" />
+    <Content Include="Foto%27s\AnaContourkit.jpg" />
+    <Content Include="Foto%27s\BrowWiz.jpg" />
+    <Content Include="Foto%27s\DarksideEyeliner.jpg" />
+    <Content Include="Foto%27s\Everlasting.jpg" />
+    <Content Include="Foto%27s\LipPalette.jpg" />
+    <Content Include="Foto%27s\LockitFou.jpg" />
+    <Content Include="Foto%27s\LockitPoe.jpg" />
+    <Content Include="Foto%27s\marble.jpg" />
+    <Content Include="Foto%27s\ModernR.jpg" />
+    <Content Include="Foto%27s\NakedHeat.jpg" />
+    <Content Include="Foto%27s\NakedSkinCon.jpg" />
+    <Content Include="Foto%27s\PrimerPotion.jpg" />
+    <Content Include="Foto%27s\ShadeLight.jpg" />
+    <Content Include="Foto%27s\Troublemaker.jpg" />
+    <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginBeheerder.aspx" />
+    <Content Include="MijnBestellingen.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Producten.aspx" />
+    <Content Include="ProfielAanpassen.aspx" />
+    <Content Include="Registreren.aspx" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Sjabloon.Master" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -79,9 +116,60 @@
     <Content Include="App_Data\GIP Webshop.accdb" />
     <Content Include="Test.aspx" />
     <Content Include="Test2.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeheerBestellingen.aspx.cs">
+      <DependentUpon>BeheerBestellingen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BeheerBestellingen.aspx.designer.cs">
+      <DependentUpon>BeheerBestellingen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beheerder.aspx.cs">
+      <DependentUpon>Beheerder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beheerder.aspx.designer.cs">
+      <DependentUpon>Beheerder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BeheerKlanten.aspx.cs">
+      <DependentUpon>BeheerKlanten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BeheerKlanten.aspx.designer.cs">
+      <DependentUpon>BeheerKlanten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BeheerProducten.aspx.cs">
+      <DependentUpon>BeheerProducten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BeheerProducten.aspx.designer.cs">
+      <DependentUpon>BeheerProducten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bestellingen.aspx.cs">
+      <DependentUpon>Bestellingen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bestellingen.aspx.designer.cs">
+      <DependentUpon>Bestellingen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EigenProfiel.aspx.cs">
+      <DependentUpon>EigenProfiel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EigenProfiel.aspx.designer.cs">
+      <DependentUpon>EigenProfiel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,7 +177,42 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginBeheerder.aspx.cs">
+      <DependentUpon>LoginBeheerder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginBeheerder.aspx.designer.cs">
+      <DependentUpon>LoginBeheerder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MijnBestellingen.aspx.cs">
+      <DependentUpon>MijnBestellingen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MijnBestellingen.aspx.designer.cs">
+      <DependentUpon>MijnBestellingen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producten.aspx.cs">
+      <DependentUpon>Producten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producten.aspx.designer.cs">
+      <DependentUpon>Producten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfielAanpassen.aspx.cs">
+      <DependentUpon>ProfielAanpassen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfielAanpassen.aspx.designer.cs">
+      <DependentUpon>ProfielAanpassen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registreren.aspx.cs">
+      <DependentUpon>Registreren.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registreren.aspx.designer.cs">
+      <DependentUpon>Registreren.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sjabloon.Master.cs">
       <DependentUpon>Sjabloon.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
