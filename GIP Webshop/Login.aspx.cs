@@ -11,7 +11,7 @@ namespace GIP_Webshop
 {
     public partial class Login : System.Web.UI.Page
     {
-        public static string strConnectie = ConfigurationManager.ConnectionStrings["gip"].ToString();
+        public static string strConnectie = ConfigurationManager.ConnectionStrings["ConnectionStringCategorieen"].ToString();
         public static OleDbConnection cnn = new OleDbConnection(strConnectie);
 
         protected void Page_Load(object sender, EventArgs e)

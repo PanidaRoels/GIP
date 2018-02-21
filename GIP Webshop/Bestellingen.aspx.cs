@@ -18,7 +18,7 @@ namespace GIP_Webshop
         {
             if (!IsPostBack)
             {
-              Session["KlantID"] = 1;
+            //     Session["KlantID"] = 1;
             }
         }
 

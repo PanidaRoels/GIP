@@ -20,7 +20,7 @@
         </asp:SqlDataSource>
     </p>
     <p>
-        <asp:Button ID="btnTerug" runat="server" BackColor="#CC0000" ForeColor="White" Text="TERUG NAAR EIGEN PROFIEL" />
+        <asp:Button ID="btnTerug" runat="server" BackColor="#CC0000" ForeColor="White" Text="TERUG NAAR EIGEN PROFIEL" OnClick="btnTerug_Click" />
     </p>
     <p>
         &nbsp;</p>

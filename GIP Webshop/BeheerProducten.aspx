@@ -10,7 +10,7 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="ProductID" HeaderText="ProductID" InsertVisible="False" ReadOnly="True" SortExpression="ProductID" />
                 <asp:BoundField DataField="Naam" HeaderText="Naam" SortExpression="Naam" />
-                <asp:BoundField DataField="Eenheidsprijs" HeaderText="Eenheidsprijs" SortExpression="Eenheidsprijs" />
+                <asp:BoundField DataField="Eenheidsprijs" HeaderText="Eenheidsprijs" SortExpression="Eenheidsprijs" DataFormatString="{0:c}" />
                 <asp:BoundField DataField="Voorraad" HeaderText="Voorraad" SortExpression="Voorraad" />
                 <asp:BoundField DataField="Foto" HeaderText="Foto" SortExpression="Foto" />
                 <asp:BoundField DataField="CategorieID" HeaderText="CategorieID" SortExpression="CategorieID" />

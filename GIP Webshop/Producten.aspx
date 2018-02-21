@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
     Categorieën:<br />
-    <asp:DropDownList ID="cboCategorieen" runat="server" AutoPostBack="True" DataSourceID="dtsCategorieen" DataTextField="Naam" DataValueField="CategorieID" OnSelectedIndexChanged="cboCategorieen_SelectedIndexChanged">
+    <asp:DropDownList ID="cboCategorieen" runat="server" AutoPostBack="True" DataSourceID="dtsCategorieen" DataTextField="Naam" DataValueField="CategorieID" OnSelectedIndexChanged="cboCategorieen_SelectedIndexChanged" OnDataBound="cboCategorieen_SelectedIndexChanged">
     </asp:DropDownList>
     <asp:SqlDataSource ID="dtsCategorieen" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringCategorieen %>" ProviderName="<%$ ConnectionStrings:ConnectionStringCategorieen.ProviderName %>" SelectCommand="SELECT [CategorieID], [Naam] FROM [tblCategorie]"></asp:SqlDataSource>
 </p>
