@@ -11,12 +11,24 @@ namespace GIP_Webshop
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            dgvExtra.Visible = false;
         }
 
         protected void btnTerug_Click(object sender, EventArgs e)
         {
             Server.Transfer("Beheerder.aspx");
+        }
+
+        protected void dgvbestellingen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dtsExtra.FilterExpression = "BestellingsID =" + dgvbestellingen.SelectedRow.Cells[1].Text;
+            dgvExtra.DataBind();
+            dgvExtra.Visible = true;
+        }
+
+        protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
+        {
+
         }
     }
 }

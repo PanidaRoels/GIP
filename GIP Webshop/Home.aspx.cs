@@ -28,5 +28,10 @@ namespace GIP_Webshop
         {
             Server.Transfer("LoginBeheerder.aspx");
         }
+
+        protected void btnProducten_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Producten.aspx");
+        }
     }
 }

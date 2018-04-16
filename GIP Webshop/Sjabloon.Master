@@ -10,10 +10,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="background-image: url('/Foto%27s/marble.jpg'); font-family: 'old English Text MT'; font-size: medium; font-weight: bold; color: #CC0000; height: 784px; width: 1403px; margin-left: 0px; margin-top: 0px;">
-            logo<br />
+        <div style="background-image: url('/Foto%27s/marble.jpg'); font-family: 'old English Text MT'; font-size: medium; font-weight: bold; color: #CC0000; height: 1460px; width: 1403px; margin-left: 0px; margin-top: 0px;">
+            <asp:Image ID="Image1" runat="server" Height="140px" ImageUrl="~/Foto's/logo.jpg" Width="101px" />
             <br />
-            navigatie<br />
+            <br />
+            <br />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

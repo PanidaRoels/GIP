@@ -16,10 +16,8 @@ namespace GIP_Webshop
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-            //     Session["KlantID"] = 1;
-            }
+
+            Panel2.Visible = false;
         }
 
         protected void dgvProducten_SelectedIndexChanged(object sender, EventArgs e)
@@ -29,6 +27,8 @@ namespace GIP_Webshop
 
         protected void btnWinkelMandje_Click(object sender, EventArgs e)
         {
+            Panel2.Visible = true;
+
             //Listbox ArtikelID vullen
             string strArtikelID;
             strArtikelID = dgvProducten.SelectedRow.Cells[1].Text;
@@ -55,6 +55,7 @@ namespace GIP_Webshop
 
             //textbox aantal leegmaken
             txtAantal.Text = "";
+
 
         }
 

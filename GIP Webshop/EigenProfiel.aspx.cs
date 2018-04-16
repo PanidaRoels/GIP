@@ -28,5 +28,10 @@ namespace GIP_Webshop
         {
             Server.Transfer("MijnBestellingen.aspx");
         }
+
+        protected void btnAfmelden_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Home.aspx");
+        }
     }
 }

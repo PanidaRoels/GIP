@@ -31,6 +31,33 @@ namespace GIP_Webshop {
         protected global::System.Web.UI.WebControls.SqlDataSource dtsBestellingen;
         
         /// <summary>
+        /// dgvHeeft control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvHeeft;
+        
+        /// <summary>
+        /// dtsHeeft control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource dtsHeeft;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// btnTerug control.
         /// </summary>
         /// <remarks>

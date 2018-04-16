@@ -5,19 +5,18 @@
     <p>
         Overzicht producten</p>
     <p>
-        <asp:GridView ID="dgvProducten" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="dtsProducten" BackColor="White">
-            <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ProductID" DataSourceID="dtsProducten" Height="50px" Width="125px">
+            <Fields>
                 <asp:BoundField DataField="ProductID" HeaderText="ProductID" InsertVisible="False" ReadOnly="True" SortExpression="ProductID" />
                 <asp:BoundField DataField="Naam" HeaderText="Naam" SortExpression="Naam" />
-                <asp:BoundField DataField="Eenheidsprijs" HeaderText="Eenheidsprijs" SortExpression="Eenheidsprijs" DataFormatString="{0:c}" />
+                <asp:BoundField DataField="Eenheidsprijs" HeaderText="Eenheidsprijs" SortExpression="Eenheidsprijs" />
                 <asp:BoundField DataField="Voorraad" HeaderText="Voorraad" SortExpression="Voorraad" />
-                <asp:BoundField DataField="Foto" HeaderText="Foto" SortExpression="Foto" />
                 <asp:BoundField DataField="CategorieID" HeaderText="CategorieID" SortExpression="CategorieID" />
                 <asp:BoundField DataField="Merk" HeaderText="Merk" SortExpression="Merk" />
-            </Columns>
-        </asp:GridView>
-        <asp:SqlDataSource ID="dtsProducten" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringCategorieen %>" DeleteCommand="DELETE FROM [tblProducten] WHERE [ProductID] = ?" InsertCommand="INSERT INTO [tblProducten] ([ProductID], [Naam], [Eenheidsprijs], [Voorraad], [Foto], [CategorieID], [Merk]) VALUES (?, ?, ?, ?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionStringCategorieen.ProviderName %>" SelectCommand="SELECT [ProductID], [Naam], [Eenheidsprijs], [Voorraad], [Foto], [CategorieID], [Merk] FROM [tblProducten]" UpdateCommand="UPDATE [tblProducten] SET [Naam] = ?, [Eenheidsprijs] = ?, [Voorraad] = ?, [Foto] = ?, [CategorieID] = ?, [Merk] = ? WHERE [ProductID] = ?">
+                <asp:CommandField ShowEditButton="True" ShowInsertButton="True" />
+            </Fields>
+        </asp:DetailsView>
+        <asp:SqlDataSource ID="dtsProducten" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringCategorieen %>" DeleteCommand="DELETE FROM [tblProducten] WHERE [ProductID] = ?" InsertCommand="INSERT INTO [tblProducten] ([ProductID], [Naam], [Eenheidsprijs], [Voorraad], [CategorieID], [Merk]) VALUES (?, ?, ?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionStringCategorieen.ProviderName %>" SelectCommand="SELECT [ProductID], [Naam], [Eenheidsprijs], [Voorraad], [CategorieID], [Merk] FROM [tblProducten]" UpdateCommand="UPDATE [tblProducten] SET [Naam] = ?, [Eenheidsprijs] = ?, [Voorraad] = ?, [CategorieID] = ?, [Merk] = ? WHERE [ProductID] = ?">
             <DeleteParameters>
                 <asp:Parameter Name="ProductID" Type="Int32" />
             </DeleteParameters>
@@ -26,7 +25,6 @@
                 <asp:Parameter Name="Naam" Type="String" />
                 <asp:Parameter Name="Eenheidsprijs" Type="Decimal" />
                 <asp:Parameter Name="Voorraad" Type="Int32" />
-                <asp:Parameter Name="Foto" Type="String" />
                 <asp:Parameter Name="CategorieID" Type="Int32" />
                 <asp:Parameter Name="Merk" Type="String" />
             </InsertParameters>
@@ -34,7 +32,6 @@
                 <asp:Parameter Name="Naam" Type="String" />
                 <asp:Parameter Name="Eenheidsprijs" Type="Decimal" />
                 <asp:Parameter Name="Voorraad" Type="Int32" />
-                <asp:Parameter Name="Foto" Type="String" />
                 <asp:Parameter Name="CategorieID" Type="Int32" />
                 <asp:Parameter Name="Merk" Type="String" />
                 <asp:Parameter Name="ProductID" Type="Int32" />

@@ -17,6 +17,17 @@ namespace GIP_Webshop
                 ddvFoto.Visible = false;
             }
 
+            //if (Session["Email"] == "")
+            //{
+              //  btnBestellen.Visible = false;
+                //btnTerug.Visible = false;
+            //}
+            //else
+            //{
+              //  btnBestellen.Visible = true;
+                //btnTerug.Visible = true;
+            //}
+
         }
 
        

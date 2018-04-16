@@ -44,10 +44,10 @@ namespace GIP_Webshop
 
             cnn.Close();
 
-            Server.Transfer("EigenProfiel.aspx");
-
             leegmaken();
-     
+
+            Server.Transfer("Login.aspx");
+
         }
 
         protected void btnAnnuleren_Click(object sender, EventArgs e)
