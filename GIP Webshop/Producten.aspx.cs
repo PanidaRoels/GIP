@@ -17,16 +17,16 @@ namespace GIP_Webshop
                 ddvFoto.Visible = false;
             }
 
-            //if (Session["Email"] == "")
-            //{
-              //  btnBestellen.Visible = false;
-                //btnTerug.Visible = false;
-            //}
-            //else
-            //{
-              //  btnBestellen.Visible = true;
-                //btnTerug.Visible = true;
-            //}
+            if (Session["Email"] == null)
+            {
+               btnBestellen.Visible = false;
+               btnTerug.Visible = false;
+            }
+            else
+            {
+               btnBestellen.Visible = true;
+               btnTerug.Visible = true;
+            }
 
         }
 
@@ -38,7 +38,7 @@ namespace GIP_Webshop
             dgvProducten.DataBind();
             dgvProducten.Visible = true;
 
-
+            ddvFoto.Visible = false;
         }
 
         protected void dgvProducten_SelectedIndexChanged(object sender, EventArgs e)

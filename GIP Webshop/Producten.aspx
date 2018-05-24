@@ -9,14 +9,14 @@
     <asp:SqlDataSource ID="dtsCategorieen" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringCategorieen %>" ProviderName="<%$ ConnectionStrings:ConnectionStringCategorieen.ProviderName %>" SelectCommand="SELECT [CategorieID], [Naam] FROM [tblCategorie]"></asp:SqlDataSource>
 </p>
 <p>
-    <asp:GridView ID="dgvProducten" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="dtsProducten" OnSelectedIndexChanged="dgvProducten_SelectedIndexChanged" DataKeyNames="ProductID" BackColor="White">
+    <asp:GridView ID="dgvProducten" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="dtsProducten" OnSelectedIndexChanged="dgvProducten_SelectedIndexChanged" DataKeyNames="ProductID" BackColor="White" Font-Names="Arial">
         <Columns>
             <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="Naam" HeaderText="Naam" SortExpression="Naam" />
             <asp:BoundField DataField="Eenheidsprijs" HeaderText="Eenheidsprijs" SortExpression="Eenheidsprijs" />
             <asp:BoundField DataField="Foto" HeaderText="Foto" SortExpression="Foto" />
             <asp:BoundField DataField="Merk" HeaderText="Merk" SortExpression="Merk" />
-            <asp:BoundField DataField="CategorieID" HeaderText="CategorieID" SortExpression="CategorieID" />
+            <asp:BoundField DataField="CategorieID" HeaderText="CategorieID" SortExpression="CategorieID" Visible="False" />
             <asp:BoundField DataField="ProductID" HeaderText="ProductID" InsertVisible="False" ReadOnly="True" SortExpression="ProductID" />
         </Columns>
         <SelectedRowStyle BackColor="#CC0000" ForeColor="Black" />
@@ -26,7 +26,7 @@
 <p>
     <asp:DetailsView ID="ddvFoto" runat="server" AutoGenerateRows="False" DataKeyNames="ProductID" DataSourceID="dtsFoto" Height="50px" Width="125px">
         <Fields>
-            <asp:ImageField DataImageUrlField="Foto" DataImageUrlFormatString="Foto's/{0}">
+            <asp:ImageField DataImageUrlField="Foto" DataImageUrlFormatString="Foto's/{0}" NullImageUrl="~/Foto's/Niet.jpg">
             </asp:ImageField>
         </Fields>
     </asp:DetailsView>

@@ -5,7 +5,7 @@
     <p>
         Overzicht klanten</p>
     <p>
-        <asp:GridView ID="dgvKlanten" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="KlantID" DataSourceID="dtsKlanten" BackColor="White">
+        <asp:GridView ID="dgvKlanten" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="KlantID" DataSourceID="dtsKlanten" BackColor="White" Font-Names="Arial">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="KlantID" HeaderText="KlantID" InsertVisible="False" ReadOnly="True" SortExpression="KlantID" />

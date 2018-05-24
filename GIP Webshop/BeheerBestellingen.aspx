@@ -6,19 +6,20 @@
         Overzicht bestellingen<br />
     </p>
     <p>
-        <asp:GridView ID="dgvbestellingen" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="BestellingsID" DataSourceID="dtsBestellingen" BackColor="White" OnSelectedIndexChanged="dgvbestellingen_SelectedIndexChanged">
+        <asp:GridView ID="dgvbestellingen" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="BestellingsID" DataSourceID="dtsBestellingen" BackColor="White" OnSelectedIndexChanged="dgvbestellingen_SelectedIndexChanged" Font-Names="Arial">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="BestellingsID" HeaderText="BestellingsID" InsertVisible="False" ReadOnly="True" SortExpression="BestellingsID" />
-                <asp:BoundField DataField="Datum" HeaderText="Datum" SortExpression="Datum" />
+                <asp:BoundField DataField="Datum" HeaderText="Datum" SortExpression="Datum" DataFormatString="{0:d}" />
                 <asp:BoundField DataField="Vervoerskosten" HeaderText="Vervoerskosten" SortExpression="Vervoerskosten" />
                 <asp:BoundField DataField="KlantID" HeaderText="KlantID" SortExpression="KlantID" />
             </Columns>
+            <SelectedRowStyle BackColor="#CC0000" ForeColor="Black" />
         </asp:GridView>
         <asp:SqlDataSource ID="dtsBestellingen" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringCategorieen %>" ProviderName="<%$ ConnectionStrings:ConnectionStringCategorieen.ProviderName %>" SelectCommand="SELECT [BestellingsID], [Datum], [Vervoerskosten], [KlantID] FROM [tblBestellingen]"></asp:SqlDataSource>
     </p>
     <p>
-        <asp:GridView ID="dgvExtra" runat="server" AutoGenerateColumns="False" DataSourceID="dtsExtra">
+        <asp:GridView ID="dgvExtra" runat="server" AutoGenerateColumns="False" DataSourceID="dtsExtra" BackColor="White" Font-Names="Arial">
             <Columns>
                 <asp:BoundField DataField="BestellingsID" HeaderText="BestellingsID" InsertVisible="False" SortExpression="BestellingsID" />
                 <asp:BoundField DataField="Naam" HeaderText="Naam" SortExpression="Naam" />

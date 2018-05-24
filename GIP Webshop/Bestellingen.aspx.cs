@@ -137,6 +137,8 @@ namespace GIP_Webshop
 
             }
             dgvProducten.DataBind();
+
+            Server.Transfer("MijnBestellingen.aspx");
         }
     }
 }

@@ -5,7 +5,7 @@
     <p>
         Profiel aanpassen</p>
     <p>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="KlantID" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="KlantID" DataSourceID="SqlDataSource1" Height="50px" Width="125px" BackColor="White" Font-Names="Arial">
             <Fields>
                 <asp:BoundField DataField="KlantID" HeaderText="KlantID" InsertVisible="False" ReadOnly="True" SortExpression="KlantID" />
                 <asp:BoundField DataField="Naam" HeaderText="Naam" SortExpression="Naam" />

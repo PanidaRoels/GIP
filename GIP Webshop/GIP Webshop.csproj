@@ -75,7 +75,7 @@
     <Content Include="EigenProfiel.aspx" />
     <Content Include="Foto%27s\Alchemist.jpg" />
     <Content Include="Foto%27s\AllNighter.jpg" />
-    <Content Include="Foto%27s\AnaContourkit.jpg" />
+    <Content Include="Foto%27s\AnaContourKit.jpg" />
     <Content Include="Foto%27s\BrowWiz.jpg" />
     <Content Include="Foto%27s\DarksideEyeliner.jpg" />
     <Content Include="Foto%27s\Everlasting.jpg" />
@@ -87,6 +87,7 @@
     <Content Include="Foto%27s\ModernR.jpg" />
     <Content Include="Foto%27s\NakedHeat.jpg" />
     <Content Include="Foto%27s\NakedSkinCon.jpg" />
+    <Content Include="Foto%27s\Niet.jpg" />
     <Content Include="Foto%27s\PrimerPotion.jpg" />
     <Content Include="Foto%27s\ShadeLight.jpg" />
     <Content Include="Foto%27s\Troublemaker.jpg" />
@@ -114,9 +115,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\GIP Webshop.accdb" />
-    <Content Include="Test.aspx" />
-    <Content Include="Test2.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -220,20 +218,6 @@
     </Compile>
     <Compile Include="Sjabloon.Master.designer.cs">
       <DependentUpon>Sjabloon.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Test2.aspx.cs">
-      <DependentUpon>Test2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Test2.aspx.designer.cs">
-      <DependentUpon>Test2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

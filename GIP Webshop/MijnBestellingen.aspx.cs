@@ -12,7 +12,10 @@ namespace GIP_Webshop
         protected void Page_Load(object sender, EventArgs e)
         {
 
-                dgvHeeft.Visible = false;
+            dgvHeeft.Visible = false;
+            FormView1.Visible = false;
+            Label1.Visible = false;
+            Label2.Visible = false;
         }
 
         protected void btnTerug_Click(object sender, EventArgs e)
@@ -26,12 +29,20 @@ namespace GIP_Webshop
             dgvHeeft.DataBind();
             dgvHeeft.Visible = true;
 
-            //double dblSom;
-            //dblSom = dgvHeeft.SelectedRow.Cells[4].Text + 5;
-            //Label1.Text = 
+            SqlDataSource1.FilterExpression = "BestellingsID =" + dgvBestellingen.SelectedRow.Cells[1].Text;
+            FormView1.DataBind();
+            FormView1.Visible = true;
+
+            Label1.Visible = true;
+            Label2.Visible = true;
         }
 
         protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
+        {
+
+        }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
         {
 
         }

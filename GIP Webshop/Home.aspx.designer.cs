@@ -13,15 +13,6 @@ namespace GIP_Webshop {
     public partial class Home {
         
         /// <summary>
-        /// btnBeheerder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBeheerder;
-        
-        /// <summary>
         /// btnRegistreren control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace GIP_Webshop {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnRegistreren;
+        
+        /// <summary>
+        /// btnBeheerder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBeheerder;
         
         /// <summary>
         /// btnProducten control.

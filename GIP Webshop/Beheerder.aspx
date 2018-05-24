@@ -13,5 +13,6 @@
         <asp:Button ID="btnBestellingen" runat="server" OnClick="btnBestellingen_Click" Text="BESTELLINGEN BEKIJKEN" BackColor="#CC0000" ForeColor="White" />
     </p>
     <p>
+        <asp:Button ID="btnAfmelden" runat="server" BackColor="#CC0000" ForeColor="White" OnClick="btnAfmelden_Click" Text="AFMELDEN" />
     </p>
 </asp:Content>
